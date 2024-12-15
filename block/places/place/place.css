@@ -1,0 +1,14 @@
+.place {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: repeat(auto, 3);
+        grid-column-gap: 2vw;
+        grid-row-gap: 5vh;
+}
+
+@media screen and (max-width: 767px) and (min-width: 320px) {
+    .place {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(auto, 5);
+    }
+}
